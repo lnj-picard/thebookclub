@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule ^([a-z]+)$ index.php?page=$1
+RewriteRule ^([a-z]+)/([a-zA-Z0-9]+)$ /thebookclub/index.php?page=$1&profil=$2 [L]

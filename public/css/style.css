@@ -1,0 +1,319 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+font-size: 1.375em;
+}
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.4;
+  background: #efefef;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*HEADER*/
+#header{
+  width: 100vw;
+  height: 20vh;
+  top: 0;
+  left: 0;
+}
+#header_logo{
+  margin-left: 2vw;
+}
+#header_nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 0.7em;
+  border-bottom: 2px solid #3fb0ac;
+}
+#header_nav .svg-inline--fa{
+  margin-bottom: 2vh;
+}
+.nav_active{
+  color: #3fb0ac;
+}
+
+/*SEARCH */
+#search_input{
+  border: none;
+  background: #efefef;
+  border-bottom: 3px solid #3fb0ac;
+  width: 90vw;
+  height: 2vh;
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+}
+#search_results{
+  list-style-type: none;
+  width: 90vw;
+  margin-left: 5vw;
+}
+.search_bar_results{
+  border: 1px solid #fae596;
+  margin-top: -1px;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background: white;
+}
+.search_bar_results p{
+  font-size: 0.8em;
+}
+
+/*LANDING PAGE STYLE */
+#landingPage_container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+#lp_content{
+  height: 100%;
+  width: 100%;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.yellow_accent{
+  color: #fae596;
+  font-weight: bolder;
+}
+.form_btn{
+  width: 90vw;
+  height: 5vh;
+  border-radius: 20px;
+  text-align: center;
+  font-size: .75em;
+  font-weight: bolder;
+  padding-top: 1vh;
+}
+#signin_btn{
+  background: #3fb0ac;
+  color: white;
+  margin-bottom: 3vh;
+  border: 2px solid #3fb0ac;
+}
+#register_btn{
+  background: #efefef;
+  color: #3fb0ac;
+  border: 2px solid #3fb0ac;
+}
+#tbc_description p{
+  font-size: 1em;
+}
+#tbc_description .svg-inline--fa{
+  color: #173e43;
+}
+.modals{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #173e43;
+  opacity: 0.99;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.action_forms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+  margin-left: 10vw;
+  border-radius: 5px;
+  width: 80vw;
+}
+#signin_form{
+  height: 40vh;
+  margin-top: 30vh;
+}
+#register_form{
+  height: 60vh;
+  margin-top: 20vh;
+}
+.form_input{
+  margin-top: 4vh;
+  width: 80%;
+  height: 4vh;
+  margin-left: 10%;
+  border: none;
+  background: #efefef;
+  border-bottom: 5px solid #3fb0ac;
+}
+.login_btn{
+  width: 80%;
+  height: 6vh;
+  margin-left: 10%;
+  background: #3fb0ac;
+  border: none;
+  margin-top: 3vh;
+  color: #efefef;
+  border-radius: 20px;
+  font-size: .8em;
+  font-weight: bolder;
+}
+.close_modal{
+  color: #fae596;
+  float: left;
+  margin-top: 3vh;
+  margin-left: 5vw;
+}
+
+/*TIMELINE */
+#user_post{
+  width: 100%;
+  height: 20vh;
+  border-bottom: 2px solid #fae596;
+}
+
+/*PROFIL */
+#user_activity{
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#profil_pic{
+  height: 70px;
+  width: 70px;
+  background: black;
+  border-radius: 50%;
+}
+#profil_pic img{
+  height: 100%;
+  width: 100%;
+}
+.form_textarea{
+  border: 4px solid #3fb0ac;
+  background: #efefef;
+  margin-top: 4vh;
+  width: 80%;
+  margin-left: 10%;
+  resize: none;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+.gender{
+  margin-top: 4vh;
+  margin-left: 10vw;
+  background: #efefef;
+  border: 1px solid #3fb0ac;
+}
+
+/*BOOK INFOS */
+#general_infos, #book_description{
+  width: 80vw;
+  margin-left: 10vw;
+  display: inline-block;
+}
+#book_cover{
+  float: left;
+  height: 25vh;
+  width: auto;
+}
+#book_cover img{
+  height: 100%;
+  width: 100%;
+}
+#title_author{
+  margin-left: 25vw;
+}
+#book_description{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 2vh;
+  padding: 5px;
+}
+#book_description p{
+  font-size: 0.7em;
+}
+
+/* REVIEWS STYLE */
+#review_form{
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+#review_textarea{
+  height: 20vh;
+}
+#review_form input[type=number]{
+  border: none;
+  border-bottom: 3px solid #3fb0ac;
+  background: #efefef;
+  padding-bottom: 2px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2vh;
+}
+#review_btn{
+  width: 80%;
+  height: 4vh;
+  margin-left: 10%;
+  background: #3fb0ac;
+  border: none;
+  margin-top: 2vh;
+  color: #efefef;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+.book_reviews{
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+.review_body{
+  text-decoration: none;
+  border-bottom: 2px solid #fae596;
+  margin-top: 2vh;
+}
+.review_date{
+  float: right;
+  font-size: 0.5em;
+  margin-top: 8px;
+}
+.review_infos{
+  border: 1px solid #fae596;
+  padding: 8px;
+  background: white;
+  margin-top: 1vh;
+}
+.review_txt{
+  font-size: 0.7em;
+}
+
+/*COMMENTS */
+#comment_iframe{
+  max-height: 250px;
+  width: 100%;
+}
+#comment_form textarea{
+  border: 2px solid #3fb0ac;
+  background: white;
+  width: 100%;
+  height: 50px;
+  margin-top: 2vh;
+  resize: none;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+.comment_section, #hide_comments{
+  display: none;
+}
